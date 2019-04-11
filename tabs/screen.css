@@ -1,0 +1,26 @@
+.tabs-heading {
+  display: flex;
+}
+.tabs-header {
+  background: #ddd;
+  padding: 4px 12px;
+  margin: 4px;
+}
+
+.selected-heading {
+  background: green;
+}
+
+.tabs-content {
+  display: flex;
+}
+
+.tabs-content {
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: none;
+}
+
+.selected-content {
+  display: block;
+}

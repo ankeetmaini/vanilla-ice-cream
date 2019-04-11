@@ -4,30 +4,47 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Test</title>
     <link rel="stylesheet" type="text/css" href="screen.css" />
-    <script src="./main.js" type="text/javascript" charset="utf-8"></script>
   </head>
   <body>
     <form>
       <div>
-        <div>
-          <div id="days-of-the-week">
-            <input type="checkbox" value="MON" /> Monday
-            <input type="checkbox" value="TUE" /> Tuesday
-            <input type="checkbox" value="WED" /> Wednesday
-            <input type="checkbox" value="THU" /> Thursday
-            <input type="checkbox" value="FRI" /> Friday
-            <input type="checkbox" value="SAT" /> Saturday
-            <input type="checkbox" value="SUN" /> Sunday
+        <div className="tabs-container">
+          <!--heading-->
+          <div class="tabs-heading">
+            <h1 class="tabs-header" data-tab-heading="0">
+              Days of the Week
+            </h1>
+            <h1 class="tabs-header" data-tab-heading="1">
+              Date Picker
+            </h1>
+            <h1 class="tabs-header" data-tab-heading="2">
+              User Input
+            </h1>
           </div>
-          <div id="date-picker">
-            <input type="hidden" value="" id="date" />
-            <select> </select>
-            <select> </select>
-            <select> </select>
-          </div>
-          <div id="user-input">
-            <!-- parse it to fields above -->
-            <input type="text" value="" id="input" />
+          <div class="tabs-contents">
+            <div
+              id="days-of-the-week"
+              class="tabs-content"
+              data-tab-content="0"
+            >
+              <input name="day" type="checkbox" value="MON" /> Monday
+              <input name="day" type="checkbox" value="TUE" /> Tuesday
+              <input name="day" type="checkbox" value="WED" /> Wednesday
+              <input name="day" type="checkbox" value="THU" /> Thursday
+              <input name="day" type="checkbox" value="FRI" /> Friday
+              <input name="day" type="checkbox" value="SAT" /> Saturday
+              <input name="day" type="checkbox" value="SUN" /> Sunday
+            </div>
+            <div id="date-picker" class="tabs-content" data-tab-content="1">
+              <input type="hidden" value="" id="date" />
+              <select id="days"> </select>
+              <select id="months"> </select>
+              <select id="years"> </select>
+            </div>
+            <div id="user-input" class="tabs-content" data-tab-content="2">
+              <!-- parse it to fields above -->
+              <input type="text" value="" id="input" />
+            </div>
           </div>
         </div>
       </div>
@@ -37,5 +54,6 @@
       <!-- final format: MON,TUE,FRI or 05/12/2011 -->
       <input type="text" value="" id="result" placeholder="Result" />
     </form>
+    <script src="./main.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>
