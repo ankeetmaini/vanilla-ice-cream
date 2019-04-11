@@ -1,0 +1,12 @@
+{
+  "name": "vanilla-ice-cream",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "tabs": "parcel ./tabs/index.html"
+  },
+  "devDependencies": {
+    "parcel": "^1.12.3"
+  }
+}
