@@ -4,9 +4,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "tabs": "parcel ./tabs/index.html"
+    "dev": "python -m SimpleHttpServer 8000"
   },
-  "devDependencies": {
-    "parcel": "^1.12.3"
-  }
+  "devDependencies": {}
 }

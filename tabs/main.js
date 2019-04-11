@@ -1,4 +1,4 @@
-import Tabs from "./tabs";
+import Tabs from "./tabs.js";
 const fillDatePicker = (selectDays, selectMonths, selectYears) => {
   const months = [
     "Jan",
